@@ -24,13 +24,10 @@ public class StudentControler {
 		
 		return studentService.saveStudent(student);
 	}
-	
+
 	@GetMapping("/{id}")
 	public  StudentData getStudentDetails(@PathVariable("id") Long studentId) {
-		
-		
-	
 		return studentService.getStudentData(studentId);
 	}
-	
+
 }
